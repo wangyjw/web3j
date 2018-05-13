@@ -16,7 +16,7 @@ public class RequestTest extends RequestTester {
     protected void initWeb3Client(HttpService httpService) {
         web3j = Admin.build(httpService);
     }
-    
+
     @Test
     public void testPersonalListAccounts() throws Exception {
         web3j.personalListAccounts().send();
